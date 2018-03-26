@@ -1,0 +1,22 @@
+{
+  "development": {
+    "username": "g7k3yx5ivhh44xhk",
+    "password": "lkd1vyu82cixnpq4",
+    "port": "3306",
+
+    "database": "cf_inventory",
+    "host": "ixqxr3ajmyapuwmi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect":"mysql"
+  }
+}

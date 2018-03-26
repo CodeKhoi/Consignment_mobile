@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Consignment | Search</title>	
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ 	<link rel="stylesheet" href="../css/style.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href='../img/favicon.png' rel='shortcut icon' type='image/png'>	
+</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="https://www.corefact.com" class="brand-logo">CONSIGNMENT</a>
+				<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="/">UPDATE</a></li>
+					<li><a href="/deduct">DEDUCT</a></li>
+					<li class='active'><a href="/search">SEARCH</a></li>
+					<li><a href="/add">ADD ITEM</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile">
+					<li><a href="/">UPDATE</a></li>
+					<li><a href="/deduct">DEDUCT</a></li>
+					<li><a href="/search">SEARCH</a></li>
+					<li><a href="/add">ADD ITEM</a></li>
+				</ul>
+			</div>
+		</nav>	
+		<div class="container">
+			<div class="row">
+				<div class="card col s12 m6 m6-offset"">
+					<div class="card-content">
+							<span class="card-title grey-text text-darken-4">SEARCH AN ITEM</span>
+							<hr>
+							<select id='itemSelection' class="browser-default right">
+								<option value='' disabled selected>SELECT AN ITEM TO SEARCH</option>
+							</select>	
+
+						<div id='searchContent'></div>
+						
+						<div id='searchSection' class="input-field col s12" hidden='true'>
+							<label for="# of Skid(s)"> # of Sheets</label>
+							<input id="deductReceived" type="text" class="validate">
+							<p>Enter the amount of <strong>SHEETS</strong> to deduct from CONSIGNMENT</p>
+							<a id='searchModal' class="waves-effect waves-light btn modal-trigger" href="#searchItemModal">DEDUCT<i class="material-icons right">remove</i></a>
+							<span class="card-title" value='Refresh Page' onClick='window.location.reload();'><i class="material-icons right">close</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ================MODAL=================== -->
+
+		<!-- Modal Structure -->
+		  <div id="searchItemModal" class="modal bottom-sheet">
+		    <div id='searchModalData' class="modal-content">
+		      <h4>ARE YOU SURE?</h4>
+		      <hr>
+		      <p>You'll be DEDUCTING from:</p>
+		    </div>
+		    <div class="modal-footer">
+		    	<button id='deductConsignment' class="btn waves-effect waves-light" value='Refresh Page' onClick='window.location.reload();' type="submit" name="action">DEDUCT<i class="material-icons right">remove</i></button>
+		     	 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" value='Refresh Page' onClick='window.location.reload();'>CLOSE</a>
+		    </div>
+		  </div>
+
+		<!-- ===============END OF MODAL================= -->
+
+		<footer class='footer'>
+	      <div class='container'>
+	      	<div class='col l6'>
+	            <p class='links'><a href='https://www.corefact.com/manage/store/orders' target='_blank'>ORDER MANAGER | </a><a href='https://www.corefact.com/production/#!/shipping' target='_blank'>SHIPPING MANAGER</a></p>
+	        </div>
+	      </div>
+	    </footer>
+    <!-- ====================JS LINKS==================== -->
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<!-- Custom Script -->
+		<script src="../js/search.js" type="text/javascript"></script>	
+	</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #3E3E3B !important;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav {
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #3E3E3B;
+}
+
+nav ul li:hover {
+   background-color: #4C586F;
+}
+
+#mobile {
+	background-color: #CBC5C1;
+}
+
+.card {
+	margin-top: 25px;
+	background-color: #EBECED;
+}
+
+#itemSelection {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.btn {
+	background-color: #4C586F !important;
+	margin-top: 15px;
+}
+
+.input-field input[type=text]:focus + label {
+     color: #4C586F !important;
+     margin-top: 10px;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #4C586F !important;
+     box-shadow: 0 1px 0 0 #4C586F !important;
+     margin-top: 10px;
+   }
+
+ #searchContent p {
+ 	color: red;
+ }
+
+ #searchSection p {
+ 	margin-bottom: 10px;
+ }
+
+ .card-title i {
+ 	margin-bottom: 25px;
+ }
+
+ .footer {
+ 	background-color: #4C586F;
+ 	width: 100%;
+ 	height: 600px;
+ 	border-top: 4px solid #A2AAB0;
+ }
+
+ .links a {
+ 	color: #EBECED !important;
+ }
+
+ /*=================
+ 	   MODALS
+ =================*/
+
+ .modal p {
+	color: red;
+ }
+
+.modal {
+	background-color: #EBECED;
+ }
+
+.modal-footer {
+	padding: 0;
+	border-top: 5px solid #4C586F;
+}
+
+@media screen and (max-device-width: 968px), screen and (max-width: 968px) {
+
+	nav {
+		padding: 0;
+	} 
+
+}
