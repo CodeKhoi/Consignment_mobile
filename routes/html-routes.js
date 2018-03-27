@@ -2,10 +2,10 @@ var path = require('path');
 
 module.exports = function(app) {
 	app.get('/', function (req, res) {
-	  res.sendFile(path.join(__dirname, '/../public/html/update.html'));
+	  res.sendFile(path.join(__dirname, '/../public/html/login.html'));
 	});
 
-	app.get('/all', function (req, res) {
+	app.get('/update', function (req, res) {
 	  res.sendFile(path.join(__dirname, '/../public/html/update.html'));
 	});
 
@@ -19,9 +19,9 @@ module.exports = function(app) {
 
 	app.get('/add', function (req, res) {
 	  res.sendFile(path.join(__dirname, '/../public/html/add.html'));
-	});	
+	});
 
-	app.get('/mobile', function (req, res) {
-	  res.sendFile(path.join(__dirname, '/../public/html/index.html'));
-	});	
+	app.get('/logout', function (req, res) {
+  	res.sendFile(path.join(__dirname, '/../public/html/login.html'));
+	});		
 };
