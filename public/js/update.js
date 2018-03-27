@@ -62,7 +62,8 @@ $(document).ready(function() {
 			console.log('updateInventory: ', updateInventory);
 			console.log('updateConsignment: ', updateConsignment);
 			});
-			alert('UPDATE SUCCESSFUL')
+			alert('UPDATE SUCCESSFUL');
+			location.reload();
 		});
 	});
 
