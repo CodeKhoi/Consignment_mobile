@@ -1,11 +1,11 @@
 {
   "development": {
-    "username": "root",
-    "password": "Charlton28",
+    "username": "l7kajqiebpbog9jt",
+    "password": "gl9pina5e4a96lp2",
     "port": "3306",
 
     "database": "cf_inventory",
-    "host": "127.0.0.1",
+    "host": "a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
