@@ -82,7 +82,7 @@ nav ul li:hover {
 
 .modal {
 	background-color: #EBECED;
-	width: 75% !important ; height: 75% !important ;
+	width: 75% !important ; height: 50% !important ;
  }
 
 .modal-footer {
