@@ -6,6 +6,11 @@ var bodyParser = require('body-parser');
 // Sets up the Express App
 // =============================================================
 var app = express();
+
+//passport for authentication
+var passport = require('passport')
+var session = require('express-session')
+var env = require('dotenv').load();
 var PORT = process.env.PORT || 9999; 
 
 // Requiring our models for syncing
@@ -19,6 +24,11 @@ app.use(express.static('public'));
 // =============================================================
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+// For Passport 
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+app.use(passport.initialize()); 
+app.use(passport.session()); // persistent login sessions
 
 // Import routes and give the server access to them.
 require("./routes/api-routes.js")(app);
