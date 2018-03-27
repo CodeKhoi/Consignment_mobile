@@ -25,10 +25,10 @@ $(document).ready(function() {
 	function handleItemSelected() {
 	    var newItemSelected = $('#itemSelection').val();
 	    $('#deductSection').show();
-	    console.log(newItemSelected);
-  	}
+	}
   	
   	$('#removeBtn').on('click', function(event) {
+  		event.preventDefault();
 
 		var itemSelected = $('#itemSelection').val();
 		$.get('/api/' + itemSelected, function(data) {
@@ -53,11 +53,9 @@ $(document).ready(function() {
 				item_description: itemSelected
 			})
 			.then(function(data) {
-			console.log('updateValue: ', updateValue);
-			console.log('deductInventory: ', deductInventory);
 			});
+			alert('DEDUCTION SUCCESSFUL');
 		});
-		alert('DEDUCTION SUCCESSFUL');
 		location.reload();
 	});
 
@@ -70,7 +68,5 @@ $(document).ready(function() {
 		div.append('<p> • Deduct Amount: ' + deductQty + '</p>' + '<hr>');
 
 		$('#deductModalData').append(div);
-		console.log('itemSelected: ', itemSelected);
-		console.log('deductQTY: ', deductQty);
 	});
 }); //ready

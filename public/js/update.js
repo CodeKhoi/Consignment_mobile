@@ -57,14 +57,10 @@ $(document).ready(function() {
 				item_description: itemSelected
 			})
 			.then(function(data) {
-			console.log('itemSelected: ', itemSelected);
-			console.log('updateValue: ', updateValue);
-			console.log('updateInventory: ', updateInventory);
-			console.log('updateConsignment: ', updateConsignment);
 			});
 			alert('UPDATE SUCCESSFUL');
-			location.reload();
 		});
+		location.reload();
 	});
 
 	$('#updateModal').on('click', function() {

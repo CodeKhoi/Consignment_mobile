@@ -20,18 +20,15 @@ $(document).ready(function() {
 				})
 				.then(function(data) {
 				});
+				alert('Item ADDED successfully!');
 			} else {
 				alert('Item already exist or missing information');
 			}
-			alert('Item ADDED successfully!');
 			location.reload();
 		});
 
 		$('#itemDescription').val('');
 		$('#consignmentQty').val('');
-		
-		console.log('New Item: ', newItem);
-		console.log('QTY: ', newConsignment);
 	});
 
 	$('#addModal').on('click', function () {
@@ -44,8 +41,5 @@ $(document).ready(function() {
 		div.append('<p> • Consignment QTY: ' + newItemQty + '</p>' + '<hr>');
 
 		$('#modalData').append(div);
-
-		console.log(newItem);
-		console.log(newItemQty);
 	});
 });

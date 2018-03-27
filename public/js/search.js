@@ -29,7 +29,6 @@ $(document).ready(function() {
 	    $.get('/api/' + newItemSelected, function(data) {
 		searchResults(data);
 		})
-		console.log(newItemSelected);
   	}	
 
 	function searchResults(data) {
@@ -48,7 +47,6 @@ $(document).ready(function() {
 				div.append('<p> • Current inventory: ' + data[i].item_qty + '</p>');
 
 				$('#searchContent').append(div);
-
 			}
 		}
 	}	
@@ -68,11 +66,9 @@ $(document).ready(function() {
 				item_description: itemSelected
 			})
 			.then(function(data) {
-			console.log('updateValue: ', updateValue);
-			console.log('updateConsignment: ', updateConsignment);
 			});
+			alert('DEDUCTION SUCCESSFUL');
 		});
-		alert('DEDUCTION SUCCESSFUL');
 		location.reload();
 	});
 
@@ -85,7 +81,5 @@ $(document).ready(function() {
 		div.append('<p> • Deduct Amount (sheets): ' + searchQty + '</p>' + '<hr>');
 
 		$('#searchModalData').append(div);
-		console.log('itemSelected: ', itemSelected);
-		console.log('deductQTY: ', searchQty);
 	});
 }); //ready
