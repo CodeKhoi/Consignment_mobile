@@ -23,7 +23,8 @@ $(document).ready(function() {
 			} else {
 				alert('Item already exist or missing information');
 			}
-			alert('Item ADDED successfully!')
+			alert('Item ADDED successfully!');
+			location.reload();
 		});
 
 		$('#itemDescription').val('');

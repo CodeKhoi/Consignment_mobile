@@ -57,7 +57,8 @@ $(document).ready(function() {
 			console.log('deductInventory: ', deductInventory);
 			});
 		});
-		alert('DEDUCTION SUCCESSFUL')
+		alert('DEDUCTION SUCCESSFUL');
+		location.reload();
 	});
 
 	$('#deductModal').on('click', function() {

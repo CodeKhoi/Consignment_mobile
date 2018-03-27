@@ -72,7 +72,8 @@ $(document).ready(function() {
 			console.log('updateConsignment: ', updateConsignment);
 			});
 		});
-		alert('DEDUCTION SUCCESSFUL')
+		alert('DEDUCTION SUCCESSFUL');
+		location.reload();
 	});
 
 	$('#searchModal').on('click', function() {
