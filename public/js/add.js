@@ -20,10 +20,10 @@ $(document).ready(function() {
 				})
 				.then(function(data) {
 				});
-				alert('Item ADDED successfully!');
 			} else {
 				alert('Item already exist or missing information');
 			}
+			alert('Item ADDED successfully!');
 			location.reload();
 		});
 

@@ -58,8 +58,8 @@ $(document).ready(function() {
 			})
 			.then(function(data) {
 			});
-			alert('UPDATE SUCCESSFUL');
 		});
+		alert('UPDATE SUCCESSFUL');
 		location.reload();
 	});
 

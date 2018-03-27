@@ -54,8 +54,8 @@ $(document).ready(function() {
 			})
 			.then(function(data) {
 			});
-			alert('DEDUCTION SUCCESSFUL');
 		});
+		alert('DEDUCTION SUCCESSFUL');
 		location.reload();
 	});
 

@@ -68,8 +68,8 @@ $(document).ready(function() {
 			.then(function(data) {
 			});
 			alert('DEDUCTION SUCCESSFUL');
+			location.reload();
 		});
-		location.reload();
 	});
 
 	$('#searchModal').on('click', function() {
