@@ -19,10 +19,6 @@ nav ul li:hover {
    background-color: #4C586F;
 }
 
-#loginForm {
-	background-color: red;
-}
-
 #mobile {
 	background-color: #CBC5C1;
 }
@@ -51,7 +47,7 @@ nav ul li:hover {
      border-bottom: 1px solid #4C586F !important;
      box-shadow: 0 1px 0 0 #4C586F !important;
      margin-top: 10px;
-   }
+ }
 
  #searchContent p {
  	color: red;
